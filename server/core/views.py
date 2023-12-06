@@ -1,11 +1,12 @@
 from django.shortcuts import render, HttpResponseRedirect
-from rest_framework import status
-from rest_framework.response import Response
+
+
 from django.contrib.auth import login
-from rest_framework.decorators import api_view
+
 from .forms import CustomUserCreationForm
 
 # Create your views here.
+
 
 def register_user(request):
     form = CustomUserCreationForm()
